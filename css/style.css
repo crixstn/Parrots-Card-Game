@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #EEF9BF;
+}
+
+/* ---------------header--------------- */
+.title{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 66px;
+    letter-spacing: -0.004em;
+    color: #75B79E;
+
+    margin-top: 40px;
+    text-align: center; 
+}
+
+/* ---------------main--------------- */
+.container{
+    width: 55%;
+    margin: 47px auto 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/*-------timer------*/
+.timer{
+    width: 100px;
+    height: 80px;
+    position: fixed;
+    background-color: #A7E9AF;
+    border: 1px solid #99CEA8;
+    border-radius: 5px 0 0 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 1px 1px 1px rgba(0,0,0,.3);
+
+    top:40px;
+    right: 0;
+    
+    font-family: 'Roboto', sans-serif;
+    color: #75B79E;
+    font-size: 30px;
+}
+
+/* -----cards----- */
+
+.card{
+    border-radius: 5px;
+    margin: 17px 17px;
+
+    width: 117px;
+    height: 146px;
+
+    position: relative;
+}
+
+
+.front{
+    background-image: url("../img/parrotfront.png");
+    background-size: 100px;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    background-color: #A7E9AF;
+    border: 1px solid #99CEA8;
+    border-radius: 5px;
+    box-shadow: 1px 1px 1px rgba(0,0,0,.3);
+
+    transform-style: preserve-3d;
+    transition: all .5s;
+}
+
+.back{
+    border-radius: 5px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100px;
+
+    transform: rotateY(180deg);
+}
+
+.back.back1{
+    background-image: url('../img/astronautparrot.gif');
+}
+    
+.back.back2{
+    background-image: url('../img/bobaparrot.gif');
+}
+    
+.back.back3{
+    background-image: url('../img/congapartyparrot.gif');
+}
+    
+.back.back4{
+    background-image: url('../img/discoparrot.gif');
+}
+    
+.back.back5{
+    background-image: url('../img/docparrot.gif');
+}
+    
+.back.back6{
+    background-image: url('../img/everythingsfineparrot.gif');
+}
+    
+.back.back7{
+    background-image: url('../img/githubparrot.gif');
+}
+
+@media (max-width: 640px) {
+    .title{
+        font-size: 36px;
+        line-height: 30px;
+    }
+    
+    .timer{
+        width: 50px;
+        height: 30px;
+        font-size: 10px;
+        top: 5px;
+    }
+}
